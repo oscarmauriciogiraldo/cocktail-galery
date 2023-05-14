@@ -36,5 +36,22 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
   ### Deploy Project
 
-  
+  - ng deploy --base-href=https://oscarmauriciogiraldo.github.io/cocktail-galery/
+
+## Install Fontawesome
+
+  - npm install --save @fortawesome/fontawesome-free
+
+  ### Configure Fontawesome Styles
+
+  Angular.Json
+
+  - "styles": [
+    "src/styles.scss",
+    "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+  ],
+
+  - "scripts": [
+    "node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+  ]
 
