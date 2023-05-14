@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 //@import url('https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;500;600;700&family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "primeicons/primeicons.css";
 
 :root{
   --base-color: #efece5;
@@ -62,8 +63,47 @@ button.primary-botton{
   //box-shadow: rgba(91, 163, 168, 0.16) 0px 3px 6px, rgba(91, 163, 168, 0.23) 0px 3px 6px;
   cursor: pointer;
   i{
+    padding: 5px;
     border-radius: 50%;
     color: var(--font-color-alternative);
     background: var(--primary-color-alternative);
+    font-size: 15px;
   }
+}
+
+.backGround-container-drinks-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+ /*  height: 1200px; */
+  background: var(--second-color);
+  clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.backGround-container-drinks-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+ /*  height: 1200px; */
+  background: var(--alternative-color);
+  clip-path: polygon(0 0, 100% 16%, 100% 100%, 0% 100%);
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+
+.backGround-container-detail-drinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+ /*  height: 1200px; */
+  background: var(--primary-color);
+  clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+  overflow: hidden;
+  border-radius: 40px;
 }
