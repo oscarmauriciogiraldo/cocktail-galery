@@ -1,6 +1,96 @@
 .containerbanner{
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1300px;
+  flex-direction: column;
+  background: transparent;
+  padding: 5px;
+  .infoContet{}
+
+  .imgBoxInfo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    //position: relative;
+    //background: red;
+    .imgBx{
+      display: flex;
+      width: 350px;
+      height: 350px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 50%;
+      //clip-path: circle(50% at 50% 50%);
+      background: var(--primary-color);
+      //padding: 40px;
+      .bg1{
+        display: flex;
+        width: 350px;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        background: url(/assets/img/ilustraciones/Fruta-roja-centro.png);
+        background-repeat: no-repeat;
+        background-position: -5% 75%;
+        padding: 0;
+        .bg2{
+          display: flex;
+          width: 350px;
+          height: 350px;
+          justify-content: center;
+          align-items: center;
+          background: url(/assets/img/ilustraciones/Palitos-cafe-centro.png);
+          background-repeat: no-repeat;
+          background-position: right 0% bottom 45%;
+          padding: 0;
+          .ginContet{
+            //position: relative;
+            width: 130px;
+            //height: 250px;
+            overflow: hidden;
+            cursor: pointer;
+            /*object-fit: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center; */
+            //border-radius: 20% 20%;
+            //box-shadow: rgba(153, 23, 255, 0.25) 0px 14px 28px, rgba(153, 23, 255, 0.22) 0px 10px 10px;
+            &:hover{
+              -webkit-transform: rotateZ(-10deg);
+              -ms-transform: rotateZ(-10deg);
+              transform: rotateZ(-10deg);
+              transition: 1s ease;
+            }
+            img{
+              //width: 70%;
+              //position: absolute;
+              bottom: 0;
+              //left: 0;
+              width: 100%;
+              object-fit: cover;
+              transition: 0.5s ease-in-out;
+              //transform-origin: bottom;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px){
+  .containerbanner{
+    width: 95%;
+    height: 85%;
+    max-width: 1300px;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    //background: rebeccapurple;
+    padding: 20px 0px;
+  }
 }
