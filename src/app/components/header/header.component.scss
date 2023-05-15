@@ -14,12 +14,13 @@ header{
     flex-direction: column;
     position: relative;
     transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
+
     .toggle_btn{
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      width: 50px;
+      width: 60px;
       height: 50px;
       border: 0;
       padding: 10px;
@@ -77,28 +78,68 @@ header{
       display: none;
       justify-content: center;
       align-items: center;
-      background: rebeccapurple;
+      //background: rebeccapurple;
       width: 100%;
-      max-height: 0px;
-      translate: (0px 100px);
-      transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
-      //transition: all 300ms ease;
+      //max-height: 0px;
+      transition: all 300ms ease;
+      transition: all 300ms ease-in-out;
       &.active{
-        max-height: 300px;
-
+        display: flex;
+        transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
+        backdrop-filter: blur(4.0px);
+        border-radius: 30px;
+        background: var(--primary-color);
+        translate: (0px 190px);
+        opacity: 0.5;
+        border: solid 1px #5ba3a8;
       }
       nav{
         display: flex;
         width: 100%;
+        //height: 0px;
         justify-content: flex-start;
         padding: 5px;
         align-items: center;
+        transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
+        &.active{
+          height: 250px;
+
+        }
 
         ul.nav{
           position: relative;
           display: flex;
           flex-direction: column;
+          li{
+            list-style: none;
+            a{
+              display: inline-block;
+              color: var(--font-color);
+              font-size: 25px;
+              font-weight: 800;
+              font-family: var(--font-family);
+              text-decoration: none;
+              padding: 15px 30px;
+              &::before{
+                position: absolute;
+                content: '';
+                width: 0px;
+                height: 3px;
+                background: var(--alternative-color);
+                bottom: 0;
+                border-radius: 4px;
+                transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
 
+              }
+              &:hover::before{
+                width: 40px;
+              }
+              &:hover{
+                font-weight: 800;
+              }
+
+            }
+          }
         }
       }
 
@@ -182,32 +223,9 @@ header{
           ul.nav{
             flex-direction: row;
             li{
-              list-style: none;
               a{
-                display: inline-block;
-                color: var(--font-color);
                 font-size: 15px;
-                font-family: var(--font-family);
-                text-decoration: none;
-                padding: 15px 30px;
-                &::before{
-                  position: absolute;
-                  content: '';
-                  width: 0px;
-                  height: 3px;
-                  background: var(--alternative-color);
-                  bottom: 0;
-                  border-radius: 4px;
-                  transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
-
-                }
-                &:hover::before{
-                  width: 40px;
-                }
-                &:hover{
-                  font-weight: 800;
-                }
-
+                font-weight: 100;
               }
             }
           }
