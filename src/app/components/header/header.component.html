@@ -1,5 +1,43 @@
 <header>
-<h1 class="title">Drink of the moment</h1>
+
+  <section class="headerContent">
+
+    <button class="toggle_btn" (click)="toggleDropDownMenu()">
+      <div [class.active]="showDropDownMenu"></div>
+      <div [class.active]="showDropDownMenu"></div>
+      <div [class.active]="showDropDownMenu"></div>
+    </button>
+
+    <div class="containerLogo">
+      <a href="#">
+        <img src="assets/img/logo/Logo.png" alt="">
+      </a>
+    </div>
+
+    <div class="containerMenu" [class.active]="showDropDownMenu">
+      <nav>
+        <ul class="nav">
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Rewards</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="search-box">
+
+      <div class="search">
+        <button class="search-button">
+          <i class="pi pi-search"></i>
+        </button>
+        <input type="text" class="search-text" placeholder="Search">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- *****  -->
+<!-- <h1 class="title">Drink of the moment</h1>
 
 <p class="text">
   Gin, also known as gin, is one of the most
@@ -13,6 +51,6 @@
 <button class="primary-botton">
   Try now
   <i class="pi pi-chevron-right"></i>
-</button>
+</button> -->
 
 </header>

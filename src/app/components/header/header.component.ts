@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  showDropDownMenu = false;
+
+  toggleDropDownMenu(){
+    this.showDropDownMenu = !this.showDropDownMenu
+  }
+
 }
