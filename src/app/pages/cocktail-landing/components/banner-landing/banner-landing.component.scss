@@ -6,7 +6,7 @@
   align-items: center;
   /* centrado vertical */
   justify-content: center;
-  background: yellow;
+  //background: yellow;
 
   .infoContet{
     display: flex;
@@ -16,14 +16,14 @@
     align-items: center;
     /* centrado vertical */
     justify-content: center;
-    background: green;
+    //background: green;
 
     h1.title{
       display: flex;
       width: 100%;
       justify-content: center;
       align-items: center;
-      background: red;
+      //background: red;
       text-align: center;
       font-size: 40px;
     }
@@ -31,7 +31,7 @@
     .textContent{
       display: flex;
       width: 95%;
-      background: blue;
+      //background: blue;
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -39,7 +39,7 @@
       padding: 20px 0px;
       p.text{
         font-size: 20px;
-        background: orange;
+        //background: orange;
       }
     }
 
@@ -57,7 +57,7 @@
     flex-direction: column;
     //position: relative;
     padding: 20px 0px;
-    background: fuchsia;
+    //background: fuchsia;
 
     .imgBx{
       display: flex;
@@ -130,7 +130,22 @@
       align-items: center;
       padding: 10px 0px;
       margin: 10px 0px;
-      background: lawngreen;
+      //background: lawngreen;
+      button.primary-botton{
+        width: 50%;
+        font-size: 22px;
+        font-weight: 500;
+        i{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 20px;
+          height: 20px;
+          font-size: 18px;
+          padding: 5px;
+        }
+      }
     }
   }
 
@@ -142,7 +157,7 @@
     align-items: center;
     /* centrado vertical */
     justify-content: center;
-    background: yellow;
+    //background: yellow;
 
     .infoCocktail{
       display: flex;
@@ -153,7 +168,7 @@
       /* centrado vertical */
       justify-content: center;
       margin: 10px 0px;
-      background: orange;
+      //background: orange;
       .imgbxContainer{
         display: flex;
         width: 100%;
@@ -162,7 +177,7 @@
         /* centrado horizontal */
         justify-content: center;
         padding: 10px 0px;
-        background: green;
+        //background: green;
         .bxImg{
           display: flex;
           width: 100px;
@@ -171,6 +186,16 @@
           justify-content: center;
           align-items: center;
           background: var(--primary-color);
+          img{
+            /* //width: 70%;
+            position: absolute;
+            bottom: 0;
+            //left: 0; */
+            width: 60%;
+            object-fit: cover;
+            transition: 0.5s ease-in-out;
+            //transform-origin: bottom;
+          }
         }
       }
       .text{
@@ -181,7 +206,27 @@
         align-items: center;
         /* centrado vertical */
         justify-content: center;
-        background: red;
+        //background: red;
+        h3.title3{
+          font-family: var(--font-family);
+          color: var(--font-color);
+          text-align: center;
+          font-size: 30px;
+          font-weight: 700;
+          padding: 10px;
+          margin-bottom: 5px;
+          //background: yellow;
+        }
+        p.info{
+          display: flex;
+          width: 90%;
+          //background: orange;
+          text-align: start;
+          font-size: 20px;
+          font-weight: 100;
+          font-family: var(--font-family);
+          color: var(--font-color);
+        }
       }
     }
   }
