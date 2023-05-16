@@ -1,0 +1,188 @@
+.containerbanner{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /* centrado horizontal */
+  align-items: center;
+  /* centrado vertical */
+  justify-content: center;
+  background: yellow;
+
+  .infoContet{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* centrado horizontal */
+    align-items: center;
+    /* centrado vertical */
+    justify-content: center;
+    background: green;
+
+    h1.title{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      background: red;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .textContent{
+      display: flex;
+      width: 95%;
+      background: blue;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 18px;
+      padding: 20px 0px;
+      p.text{
+        font-size: 20px;
+        background: orange;
+      }
+    }
+
+    .containerbutton{
+      display: none;
+    }
+
+  }
+
+  .imgBoxInfo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    //position: relative;
+    padding: 20px 0px;
+    background: fuchsia;
+
+    .imgBx{
+      display: flex;
+      width: 350px;
+      height: 350px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 50%;
+      //clip-path: circle(50% at 50% 50%);
+      background: var(--primary-color);
+      //padding: 40px;
+      .bg1{
+        display: flex;
+        width: 350px;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        background: url(/assets/img/ilustraciones/Fruta-roja-centro.png);
+        background-repeat: no-repeat;
+        background-position: -5% 75%;
+        padding: 0;
+        .bg2{
+          display: flex;
+          width: 350px;
+          height: 350px;
+          justify-content: center;
+          align-items: center;
+          background: url(/assets/img/ilustraciones/Palitos-cafe-centro.png);
+          background-repeat: no-repeat;
+          background-position: right 0% bottom 45%;
+          padding: 0;
+          .ginContet{
+            //position: relative;
+            width: 130px;
+            //height: 250px;
+            overflow: hidden;
+            cursor: pointer;
+            /*object-fit: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center; */
+            //border-radius: 20% 20%;
+            //box-shadow: rgba(153, 23, 255, 0.25) 0px 14px 28px, rgba(153, 23, 255, 0.22) 0px 10px 10px;
+            &:hover{
+              -webkit-transform: rotateZ(-10deg);
+              -ms-transform: rotateZ(-10deg);
+              transform: rotateZ(-10deg);
+              transition: 1s ease;
+            }
+            img{
+              //width: 70%;
+              //position: absolute;
+              bottom: 0;
+              //left: 0;
+              width: 100%;
+              object-fit: cover;
+              transition: 0.5s ease-in-out;
+              //transform-origin: bottom;
+            }
+          }
+        }
+      }
+    }
+
+    .containerbutton{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0px;
+      margin: 10px 0px;
+      background: lawngreen;
+    }
+  }
+
+  .infoList{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* centrado horizontal */
+    align-items: center;
+    /* centrado vertical */
+    justify-content: center;
+    background: yellow;
+
+    .infoCocktail{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      /* centrado horizontal */
+      align-items: center;
+      /* centrado vertical */
+      justify-content: center;
+      margin: 10px 0px;
+      background: orange;
+      .imgbxContainer{
+        display: flex;
+        width: 100%;
+        /* centrado Vertical */
+        align-items: center;
+        /* centrado horizontal */
+        justify-content: center;
+        padding: 10px 0px;
+        background: green;
+        .bxImg{
+          display: flex;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          background: var(--primary-color);
+        }
+      }
+      .text{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        /* centrado horizontal */
+        align-items: center;
+        /* centrado vertical */
+        justify-content: center;
+        background: red;
+      }
+    }
+  }
+}
