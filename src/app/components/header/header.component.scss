@@ -165,13 +165,14 @@ header{
 
 @media screen and (min-width: 900px){
   header{
+    padding: 50px 0px;
     section.headerContent{
-      background: orange;
+      //background: orange;
       flex-direction: row;
       max-width: 1300px;
       .containerLogo{
         width: 20%;
-        background: yellowgreen;
+        //background: yellowgreen;
         a{
           justify-content: center;
           align-items: center;
@@ -184,7 +185,7 @@ header{
 
       .containerMenu{
         display: flex;
-        background: red;
+        //background: red;
         position: relative;
         width: 60%;
         justify-content: flex-start;
@@ -238,8 +239,13 @@ header{
       .search-box{
         width: 20%;
         padding: 0px;
-        background: pink;
+        //background: pink;
 
+        .search{
+          input.search-text{
+            width: 80%;
+          }
+        }
         .bxBookmark{
           img{
             width: 50%;
