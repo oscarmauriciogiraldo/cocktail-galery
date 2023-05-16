@@ -1,158 +1,235 @@
-.contentDrinks{
+.ContainerDrinks{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  //flex-wrap: wrap;
   width: 100%;
-  flex-direction: column;
-  //background: red;
-  padding: 5px;
-
-  .bg1Drinks{
+  /* centrado horizontal */
+  justify-content: center;
+  /* centrado vertical */
+  align-items: center;
+  background: yellow;
+  .drinks{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
-    background: url(/assets/img/ilustraciones/Limon-amarillo-fondo.png);
-    background-repeat: no-repeat;
-    background-position: top 30px right 0px;
-    margin: 30px 0px;
-    .titleDrinks{
+    flex-direction: column;
+    /* centrado horizontal */
+    align-items: center;
+    /* centrado vertical */
+    justify-content: center;
+    padding: 40px 0px;
+    //background: orange;
+    .bg1Drinks{
       display: flex;
-      width: 85%;
-      justify-content: flex-start;
-      align-items: center;
-      //background: red;
-      padding: 10px 70px;
-      color: var(--font-color);
-    }
-    .bg2Drinks{
-      display: flex;
+      width: 100%;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      background: url(/assets/img/ilustraciones/tonic-fondo.png);
+      background: url(../../../../../assets/img/ilustraciones/Limon-amarillo-fondo.png);
       background-repeat: no-repeat;
-      background-position: bottom 10px left 0px;
-      .drinks{
+      background-position: top 30px right 0px;
+      .bg2Drinks{
         display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
+        flex-direction: column;
+        /* centrado horizontal */
+        align-items: center;
+        /* centrado vertical */
+        justify-content: center;
+        background: url(/assets/img/ilustraciones/tonic-fondo.png);
+        background-repeat: no-repeat;
+        background-position: bottom 10px left 0px;
 
-        padding: 10px;
-        //background: orange;
-        .containerDrinks{
+        .titleDrinks{
           display: flex;
+          width: 85%;
+          //justify-content: flex-start;
           justify-content: center;
           align-items: center;
-          position: relative;
-          background: var(--second-color);
-          width: 95%;
-          //width: 800px;
-          //height: 1000px;
-          padding: 40px 0px;
-          position: relative;
-          //clip-path: polygon(0 0, 100% 16%, 100% 100%, 0% 100%);
-          clip-path: polygon(calc(100% - 28.1000px) calc(100% - 26.4000px),31.8000px  calc(100% - 0.1000px),31.8000px  calc(100% - 0.1000px),26.7300px  calc(100% - 0.2029px),21.8880px  calc(100% - 1.1272px),17.3460px  calc(100% - 2.8063px),13.1760px  calc(100% - 5.1736px),9.4500px  calc(100% - 8.1625px),6.2400px  calc(100% - 11.7064px),3.6180px  calc(100% - 15.7387px),1.6560px  calc(100% - 20.1928px),0.4260px  calc(100% - 25.0021px),0.0000px  calc(100% - 30.1000px),0.0000px  56.4000px ,0.0000px  56.4000px ,0.3602px  51.7233px ,1.4056px  47.2704px ,3.0834px  43.0971px ,5.3408px  39.2592px ,8.1250px  35.8125px ,11.3832px  32.8128px ,15.0626px  30.3159px ,19.1104px  28.3776px ,23.4738px  27.0537px ,28.1000px  26.4000px ,calc(100% - 31.8000px) 0.1000px ,calc(100% - 31.8000px) 0.1000px ,calc(100% - 26.7300px) 0.2029px ,calc(100% - 21.8880px) 1.1272px ,calc(100% - 17.3460px) 2.8063px ,calc(100% - 13.1760px) 5.1736px ,calc(100% - 9.4500px) 8.1625px ,calc(100% - 6.2400px) 11.7064px ,calc(100% - 3.6180px) 15.7387px ,calc(100% - 1.6560px) 20.1928px ,calc(100% - 0.4260px) 25.0021px ,100% 30.1000px ,100% calc(100% - 56.3000px),100% calc(100% - 56.3000px),calc(100% - 0.3602px) calc(100% - 51.6504px),calc(100% - 1.4056px) calc(100% - 47.2192px),calc(100% - 3.0834px) calc(100% - 43.0628px),calc(100% - 5.3408px) calc(100% - 39.2376px),calc(100% - 8.1250px) calc(100% - 35.8000px),calc(100% - 11.3832px) calc(100% - 32.8064px),calc(100% - 15.0626px) calc(100% - 30.3132px),calc(100% - 19.1104px) calc(100% - 28.3768px),calc(100% - 23.4738px) calc(100% - 27.0536px),calc(100% - 28.1000px) calc(100% - 26.4000px));
+          background: red;
+          padding: 10px 0px;
+          color: var(--font-color);
+        }
 
-          .popularDrinks1{
+        /* mobile desktop */
+        section.cocktails{
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 0px;
+          background: orange;
+
+          /* bg */
+          .containerCocktails{
             display: flex;
+            width: 95%;
             justify-content: center;
             align-items: center;
-            //flex-wrap: wrap;
-            width: 90%;
-            flex-direction: column;
-            background: transparent;
-            padding: 5px;
-            //background: green;
-            z-index: 9999;
-            border-radius: 25px;
-            //position: absolute;
-            .cardDrink{
+            position: relative;
+            background: var(--second-color);
+            padding: 40px 0px;
+            //clip-path: polygon(0 0, 100% 16%, 100% 100%, 0% 100%);
+            clip-path: polygon(
+              calc(100% - 28.1000px)
+              calc(100% - 26.4000px),31.8000px
+              calc(100% - 0.1000px),31.8000px
+              calc(100% - 0.1000px),26.7300px
+              calc(100% - 0.2029px),21.8880px
+              calc(100% - 1.1272px),17.3460px
+              calc(100% - 2.8063px),13.1760px
+              calc(100% - 5.1736px),9.4500px
+              calc(100% - 8.1625px),6.2400px
+              calc(100% - 11.7064px),3.6180px
+              calc(100% - 15.7387px),1.6560px
+              calc(100% - 20.1928px),0.4260px
+              calc(100% - 25.0021px),0.0000px
+              calc(100% - 30.1000px),0.0000px
+              56.4000px ,0.0000px  56.4000px ,
+              0.3602px  51.7233px ,
+              1.4056px  47.2704px ,
+              3.0834px  43.0971px ,
+              5.3408px  39.2592px ,
+              8.1250px  35.8125px ,
+              11.3832px  32.8128px ,
+              15.0626px  30.3159px ,
+              19.1104px  28.3776px ,
+              23.4738px  27.0537px ,
+              28.1000px  26.4000px ,
+              calc(100% - 31.8000px) 0.1000px ,
+              calc(100% - 31.8000px) 0.1000px ,
+              calc(100% - 26.7300px) 0.2029px ,
+              calc(100% - 21.8880px) 1.1272px ,
+              calc(100% - 17.3460px) 2.8063px ,
+              calc(100% - 13.1760px) 5.1736px ,
+              calc(100% - 9.4500px) 8.1625px ,
+              calc(100% - 6.2400px) 11.7064px ,
+              calc(100% - 3.6180px) 15.7387px ,
+              calc(100% - 1.6560px) 20.1928px ,
+              calc(100% - 0.4260px) 25.0021px ,
+              100% 30.1000px ,
+              100% calc(100% - 56.3000px),
+              100% calc(100% - 56.3000px),
+              calc(100% - 0.3602px)
+              calc(100% - 51.6504px),
+              calc(100% - 1.4056px)
+              calc(100% - 47.2192px),
+              calc(100% - 3.0834px)
+              calc(100% - 43.0628px),
+              calc(100% - 5.3408px)
+              calc(100% - 39.2376px),
+              calc(100% - 8.1250px)
+              calc(100% - 35.8000px),
+              calc(100% - 11.3832px)
+              calc(100% - 32.8064px),
+              calc(100% - 15.0626px)
+              calc(100% - 30.3132px),
+              calc(100% - 19.1104px)
+              calc(100% - 28.3768px),
+              calc(100% - 23.4738px)
+              calc(100% - 27.0536px),
+              calc(100% - 28.1000px)
+              calc(100% - 26.4000px));
+
+            /* Contenedor cards */
+            .popularCocktails{
               display: flex;
-              width: 250px;
-              height: 300px;
+              width: 95%;
               flex-direction: column;
-              padding: 5px;
-              justify-content: space-around;
+              /* centrado horizontal */
               align-items: center;
-              background: transparent;
-              //background: lightcoral;
-              margin: 10px 0px;
-              .containerCardImg{
+              /* centrado vertical */
+              justify-content: center;
+              padding: 5px 0px;
+              background: green;
+              //z-index: 9999;
+              border-radius: 25px;
+              //transform: translateY(-30px);
+              .cardDrink{
                 display: flex;
-                width: 200px;
-                height: 200px;
-                background: var(--drinks-bg-color);
-                padding: 10px;
-                justify-content: center;
+                width: 290px;
+                height: 340px;
+                flex-direction: column;
+                padding: 10px 5px;
+                justify-content: space-around;
                 align-items: center;
-                border-radius: 50%;
-                overflow: hidden;
-                .bxImg{
+                //background: transparent;
+                background: var( --base-color);
+                margin: 20px 0px;
+                border-radius: 25px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                transition: all 300ms ease;
+                .containerCardImg{
                   display: flex;
-                  width: 100%;
-                  height: 100%;
+                  width: 200px;
+                  height: 200px;
+                  background: var(--drinks-bg-color);
+                  padding: 10px;
                   justify-content: center;
                   align-items: center;
                   border-radius: 50%;
-                  border: solid 3px #574747;
                   overflow: hidden;
-                  img{
-                    bottom: 0;
-                    //left: 0;
+                  .bxImg{
+                    display: flex;
                     width: 100%;
-                    object-fit: cover;
-                    transition: 0.5s ease-in-out;
-                    //transform-origin: bottom;
-                    &:hover{
-                      cursor: pointer;
-                      -webkit-transform: scale(1.2);
-                      -ms-transform: scale(1.2);
-                      transform: scale(1.2);
-                      transition: 1s ease;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    //border: solid 3px #574747;
+                    overflow: hidden;
+                    img{
+                      bottom: 0;
+                      //left: 0;
+                      width: 100%;
+                      object-fit: cover;
+                      transition: 0.5s ease-in-out;
+                      //transform-origin: bottom;
+                      &:hover{
+                        cursor: pointer;
+                        -webkit-transform: scale(1.2);
+                        -ms-transform: scale(1.2);
+                        transform: scale(1.2);
+                        transition: 1s ease;
+                      }
                     }
                   }
                 }
-              }
-              .contenText{
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-                align-items: center;
-                flex-direction: column;
-                text-align: center;
-                //background: orange;
-                padding: 10px 5px;
-                h3{
-                  font-size: 18px;
-                  color: #fff;
-                  font-family: var(--font-family);
-                  font-weight: 700;
-                }
-                button.buttonCard{
-                  border: none;
+
+                .contenText{
                   display: flex;
-                  justify-content: space-around;
-                  padding: 10px;
-                  width: 80%;
-                  font-size: 16px;
-                  color: #fff;
-                  //color: var(--font-color);
-                  font-family: var(--font-family);
-                  border-radius: 25px;
-                  background: transparent;
-                  transition: all 300ms ease;
-                  margin: 10px 0px;
-                  cursor: pointer;
-                  &:hover{
-                    background: var(--primary-color);
+                  width: 100%;
+                  justify-content: space-between;
+                  align-items: center;
+                  flex-direction: column;
+                  text-align: center;
+                  //background: orange;
+                  padding: 10px 5px;
+                  h3{
+                    font-size: 18px;
+                    //color: #fff;
                     color: var(--font-color);
+                    font-family: var(--font-family);
+                    font-weight: 700;
                   }
-                  i{
-                    font-weight: 800;
+                  button.buttonCard{
+                    border: none;
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 10px;
+                    width: 80%;
+                    //font-size: 16px;
+                    font-size: 18px;
+                    color: var(--font-color);
+                    font-family: var(--font-family);
+                    border-radius: 25px;
+                    background: var(--primary-color);
+                    transition: all 300ms ease;
+                    cursor: pointer;
+                    margin: 10px 0px;
+                    /* &:hover{
+                      background: var(--primary-color);
+                      color: var(--font-color);
+                    }
+                    i{
+                      font-weight: 800;
+                    } */
                   }
                 }
               }
@@ -162,207 +239,34 @@
       }
     }
   }
-
-  .bgIngredients{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    background: url(/assets/img/ilustraciones/miel-fondo.png);
-    background-repeat: no-repeat;
-    background-position: top 30px right 0px;
-    margin: 30px 0px;
-    .titleIngredients{
-      display: flex;
-      width: 85%;
-      justify-content: flex-end;
-      align-items: center;
-      //background: red;
-      padding: 10px 70px;
-      color: var(--font-color);
-    }
-    .bg2Ingredients{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      background: url(/assets/img/ilustraciones/gin-fondo.png);
-      background-repeat: no-repeat;
-      background-position: bottom 10px left 0px;
-      .ingredients{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 10px;
-        //background: orange;
-        .containerIngredients{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          background: var(--alternative-color);
-          width: 95%;
-          //width: 800px;
-          //height: 1000px;
-          padding: 50px 0px;
-          position: relative;
-          border-radius: 30px;
-          clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
-          //clip-path: polygon(calc(100% - 28.1000px) calc(100% - 26.4000px),31.8000px  calc(100% - 0.1000px),31.8000px  calc(100% - 0.1000px),26.7300px  calc(100% - 0.2029px),21.8880px  calc(100% - 1.1272px),17.3460px  calc(100% - 2.8063px),13.1760px  calc(100% - 5.1736px),9.4500px  calc(100% - 8.1625px),6.2400px  calc(100% - 11.7064px),3.6180px  calc(100% - 15.7387px),1.6560px  calc(100% - 20.1928px),0.4260px  calc(100% - 25.0021px),0.0000px  calc(100% - 30.1000px),0.0000px  56.4000px ,0.0000px  56.4000px ,0.3602px  51.7233px ,1.4056px  47.2704px ,3.0834px  43.0971px ,5.3408px  39.2592px ,8.1250px  35.8125px ,11.3832px  32.8128px ,15.0626px  30.3159px ,19.1104px  28.3776px ,23.4738px  27.0537px ,28.1000px  26.4000px ,calc(100% - 31.8000px) 0.1000px ,calc(100% - 31.8000px) 0.1000px ,calc(100% - 26.7300px) 0.2029px ,calc(100% - 21.8880px) 1.1272px ,calc(100% - 17.3460px) 2.8063px ,calc(100% - 13.1760px) 5.1736px ,calc(100% - 9.4500px) 8.1625px ,calc(100% - 6.2400px) 11.7064px ,calc(100% - 3.6180px) 15.7387px ,calc(100% - 1.6560px) 20.1928px ,calc(100% - 0.4260px) 25.0021px ,100% 30.1000px ,100% calc(100% - 56.3000px),100% calc(100% - 56.3000px),calc(100% - 0.3602px) calc(100% - 51.6504px),calc(100% - 1.4056px) calc(100% - 47.2192px),calc(100% - 3.0834px) calc(100% - 43.0628px),calc(100% - 5.3408px) calc(100% - 39.2376px),calc(100% - 8.1250px) calc(100% - 35.8000px),calc(100% - 11.3832px) calc(100% - 32.8064px),calc(100% - 15.0626px) calc(100% - 30.3132px),calc(100% - 19.1104px) calc(100% - 28.3768px),calc(100% - 23.4738px) calc(100% - 27.0536px),calc(100% - 28.1000px) calc(100% - 26.4000px));
-          .popularIngredients{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            //flex-wrap: wrap;
-            width: 90%;
-            flex-direction: column;
-            background: transparent;
-            padding: 5px;
-            //background: green;
-            z-index: 9999;
-            border-radius: 25px;
-            //position: absolute;
-            .cardDrink{
-              display: flex;
-              width: 250px;
-              height: 300px;
-              flex-direction: column;
-              padding: 5px;
-              justify-content: space-around;
-              align-items: center;
-              background: transparent;
-              //background: lightcoral;
-              margin: 10px 0px;
-              .containerCardImg{
-                display: flex;
-                width: 200px;
-                height: 200px;
-                background: var(--drinks-bg-color);
-                padding: 10px;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                overflow: hidden;
-                .bxImg{
-                  display: flex;
-                  width: 100%;
-                  height: 100%;
-                  justify-content: center;
-                  align-items: center;
-                  border-radius: 50%;
-                  border: solid 3px #574747;
-                  overflow: hidden;
-                  img{
-                    bottom: 0;
-                    //left: 0;
-                    width: 100%;
-                    object-fit: cover;
-                    transition: 0.5s ease-in-out;
-                    //transform-origin: bottom;
-                    &:hover{
-                      cursor: pointer;
-                      -webkit-transform: scale(1.2);
-                      -ms-transform: scale(1.2);
-                      transform: scale(1.2);
-                      transition: 1s ease;
-                    }
-                  }
-                }
-              }
-              .contenText{
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-                align-items: center;
-                flex-direction: column;
-                text-align: center;
-                //background: orange;
-                padding: 10px 5px;
-                h3{
-                  font-size: 18px;
-                  color: #fff;
-                  font-family: var(--font-family);
-                  font-weight: 700;
-                }
-                button.buttonCard{
-                  border: none;
-                  display: flex;
-                  justify-content: space-around;
-                  padding: 10px;
-                  width: 80%;
-                  font-size: 16px;
-                  color: #fff;
-                  //color: var(--font-color);
-                  font-family: var(--font-family);
-                  border-radius: 25px;
-                  background: transparent;
-                  transition: all 300ms ease;
-                  cursor: pointer;
-                  margin: 10px 0px;
-                  &:hover{
-                    background: var(--primary-color);
-                    color: var(--font-color);
-                  }
-                  i{
-                    font-weight: 800;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-
-  /* .ingredients{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1300px;
-    padding: 10px;
-  } */
 }
 
 @media screen and (min-width: 900px){
-  .contentDrinks{
-    .bg1Drinks{
-      .bg2Drinks{
-        .drinks{
-          max-width: 1300px;
-          .containerDrinks{
+  .ContainerDrinks{
+    .drinks{
+      .bg1Drinks{
+        .bg2Drinks{
+          .titleDrinks{
 
-            .popularDrinks1{
-              flex-wrap: wrap;
-              width: 80%;
-              flex-direction: row;
-              justify-content: space-around;
-              //background: orange;
-              .cardDrink{
-                margin: 10px 30px;
-              }
-            }
           }
-        }
-      }
-    }
-
-    .bgIngredients{
-      .bg2Ingredients{
-        .ingredients{
-          max-width: 1300px;
-          .containerIngredients{
-            .popularIngredients{
-              flex-wrap: wrap;
-              width: 80%;
-              flex-direction: row;
-              justify-content: space-around;
-              .cardDrink{
-                margin: 10px 30px;
+          /* mobile desktop */
+          section.cocktails{
+            .containerCocktails{
+              .popularCocktails{
+                .cardDrink{
+                  display: flex;
+                  width: 250px;
+                  height: 300px;
+                  flex-direction: column;
+                  padding: 5px;
+                  justify-content: space-around;
+                  align-items: center;
+                  //background: transparent;
+                  background: var( --base-color);
+                  margin: 20px 0px;
+                  border-radius: 25px;
+                  box-shadow: none;
+                }
               }
             }
           }
