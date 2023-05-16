@@ -231,3 +231,87 @@
     }
   }
 }
+
+
+@media screen and (min-width: 900px){
+  .containerbanner{
+
+    .infoContet{
+
+      h1.title{
+
+      }
+
+      .textContent{
+
+        p.text{
+
+        }
+      }
+
+      .containerbutton{
+
+      }
+
+    }
+
+    .imgBoxInfo{
+
+
+      .imgBx{
+
+        .bg1{
+
+          .bg2{
+
+            .ginContet{
+
+              &:hover{
+
+              }
+              img{
+
+              }
+            }
+          }
+        }
+      }
+
+      .containerbutton{
+
+        button.primary-botton{
+
+          i{
+
+          }
+        }
+      }
+    }
+
+    .infoList{
+
+
+      .infoCocktail{
+
+        .imgbxContainer{
+
+          .bxImg{
+
+            img{
+
+            }
+          }
+        }
+        .text{
+
+          h3.title3{
+
+          }
+          p.info{
+
+          }
+        }
+      }
+    }
+  }
+}
