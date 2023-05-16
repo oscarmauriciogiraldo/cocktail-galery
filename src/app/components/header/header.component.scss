@@ -6,7 +6,7 @@ header{
   /* centrado vertical */
   align-items: center;
   transition: all 300ms ease-in;
-  background: orange;
+  //background: orange;
   padding: 10px 0px;
   section.headerContent{
     display: flex;
@@ -17,14 +17,14 @@ header{
     /* centrado vertical */
     justify-content: center;
     //margin-top: 20px 0px;
-    background: yellow;
+    //background: yellow;
     position: relative;
     .containerLogo{
       display: flex;
       justify-content: center;
       align-items: center;
       width: 50%;
-      background: red;
+      //background: red;
       a{
         display: flex;
         width: 100%;
@@ -55,10 +55,10 @@ header{
       justify-content: center;
       align-items: center;
       padding: 20px 0px;
-      background: green;
+      //background: green;
       .search{
         display: flex;
-        width: 85%;
+        width: 70%;
         height: 25px;
         background: #fff;
         border-radius: 30px;
@@ -97,6 +97,17 @@ header{
 
         }
       }
+      .bxBookmark{
+        display: flex;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 30%;
+          object-fit: cover;
+          transition: 0.5s ease-in-out;
+        }
+      }
     }
 
     button.toggle_btn{
@@ -110,7 +121,7 @@ header{
       padding: 10px;
       //background: transparent;
       position: absolute;
-      background: yellowgreen;
+      //background: yellowgreen;
       gap: .65rem;
       top: 25px;
       right: 20px;
