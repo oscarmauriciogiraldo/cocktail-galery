@@ -1,150 +1,52 @@
 header{
   display: flex;
   width: 100%;
+  /* centrado horizontal */
   justify-content: center;
+  /* centrado vertical */
   align-items: center;
-  padding: 30px 0px;
-  //background: orange;
-  .headerContent{
-    //background: yellow;
+  transition: all 300ms ease-in;
+  background: orange;
+  padding: 10px 0px;
+  section.headerContent{
     display: flex;
     width: 100%;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    /* centrado horizontal */
+    align-items: center;
+    /* centrado vertical */
+    justify-content: center;
+    //margin-top: 20px 0px;
+    background: yellow;
     position: relative;
-    transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
-
-    .toggle_btn{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 60px;
-      height: 50px;
-      border: 0;
-      padding: 10px;
-      background: transparent;
-      //background: red;
-      gap: .65rem;
-      //display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      color: var(--font-color);
-      cursor: pointer;
-      div{
-        background: var(--font-color);
-        height: 3px;
-        width: 100%;
-        border-radius: 5px;
-        transition: all .5s;
-        transform-origin: left;
-      }
-       div:first-child{
-        &.active{
-          transform: rotate(45deg);
-        }
-
-      }
-      div:nth-child(2){
-        &.active{
-          opacity: 0;
-        }
-
-      }
-      div:last-child{
-        &.active{
-          transform: rotate(-45deg);
-        }
-      }
-
-    }
-
     .containerLogo{
       display: flex;
-      position: relative;
-      overflow: hidden;
-      width: 500px;
       justify-content: center;
       align-items: center;
-
+      width: 50%;
+      background: red;
       a{
-        text-decoration: none;
-        cursor: pointer;
-      }
-    }
-    .containerMenu{
-      position: absolute;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      //background: rebeccapurple;
-      width: 100%;
-      //max-height: 0px;
-      transition: all 300ms ease;
-      transition: all 300ms ease-in-out;
-      &.active{
-        display: flex;
-        transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
-        backdrop-filter: blur(4.0px);
-        border-radius: 30px;
-        background: var(--primary-color);
-        translate: (0px 190px);
-        opacity: 0.5;
-        border: solid 1px #5ba3a8;
-      }
-      nav{
         display: flex;
         width: 100%;
-        //height: 0px;
-        justify-content: flex-start;
-        padding: 5px;
-        align-items: center;
-        transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
-        &.active{
-          height: 250px;
-
-        }
-
-        ul.nav{
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          li{
-            list-style: none;
-            a{
-              display: inline-block;
-              color: var(--font-color);
-              font-size: 25px;
-              font-weight: 800;
-              font-family: var(--font-family);
-              text-decoration: none;
-              padding: 15px 30px;
-              &::before{
-                position: absolute;
-                content: '';
-                width: 0px;
-                height: 3px;
-                background: var(--alternative-color);
-                bottom: 0;
-                border-radius: 4px;
-                transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
-
-              }
-              &:hover::before{
-                width: 40px;
-              }
-              &:hover{
-                font-weight: 800;
-              }
-
-            }
-          }
+        text-decoration: none;
+        cursor: pointer;
+        img{
+          //width: 70%;
+          //position: absolute;
+          //bottom: 0;
+          //left: 0;
+          width: 100%;
+          object-fit: cover;
+          transition: 0.5s ease-in-out;
+          //transform-origin: bottom;
         }
       }
 
 
+    }
+
+    .containerMenu{
+      display: none;
     }
 
     .search-box{
@@ -153,10 +55,11 @@ header{
       justify-content: center;
       align-items: center;
       padding: 20px 0px;
+      background: green;
       .search{
         display: flex;
         width: 85%;
-        height: 30px;
+        height: 25px;
         background: #fff;
         border-radius: 30px;
         justify-content: center;
@@ -179,7 +82,7 @@ header{
             color: #fff;
           }
           i{
-            font-size: 15px;
+            font-size: 20px;
             font-weight: 800;
           }
         }
@@ -188,57 +91,62 @@ header{
           flex: 1;
           height: 30px;
           outline: none;
-          font-size: 15px;
+          font-size: 20px;
           color: var(--font-color);
           padding-left: 5px;
 
         }
       }
     }
-  }
-}
 
-@media screen and (min-width: 900px){
-  header{
-    //background: yellow;
-    .headerContent{
-      //background: orange;
-      flex-direction: row;
-      max-width: 1200px;
-
-      .toggle_btn{
-        display: none;
+    button.toggle_btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 60px;
+      height: 50px;
+      border: none;
+      padding: 10px;
+      //background: transparent;
+      position: absolute;
+      background: yellowgreen;
+      gap: .65rem;
+      top: 25px;
+      right: 20px;
+      //display: block;
+      //position: absolute;
+      /* top: 20px;
+      right: 20px;
+      color: var(--font-color);*/
+      cursor: pointer;
+      div{
+        background: var(--font-color);
+        height: 3px;
+        width: 100%;
+        border-radius: 25px;
+        transition: all .5s;
+        //transform-origin: left;
       }
-
-      .containerLogo{
-        width: 20%;
-
-      }
-      .containerMenu{
-        display: flex;
-        //background: red;
-        position: relative;
-        width: 60%;
-        justify-content: flex-start;
-        translate: (0px 0px);
-        nav{
-          ul.nav{
-            flex-direction: row;
-            li{
-              a{
-                font-size: 15px;
-                font-weight: 100;
-              }
-            }
-          }
+      div:first-child{
+        &.active{
+          transform: rotate(45deg);
+          background: var(--primary-color);
+          transform-origin: left;
         }
       }
-
-      .search-box{
-        width: 20%;
-        padding: 0px;
+      div:nth-child(2){
+        &.active{
+          opacity: 0;
+        }
+      }
+      div:last-child{
+        &.active{
+          transform: rotate(-45deg);
+          background: var(--primary-color);
+          transform-origin: left;
+        }
       }
     }
   }
 }
-
