@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerLandingComponent } from './pages/cocktail-landing/components/banner-landing/banner-landing.component';
 import { PopularDrinksComponent } from './pages/cocktail-landing/components/popular-drinks/popular-drinks.component';
 import { LatestDrinksComponent } from './pages/cocktail-landing/components/latest-drinks/latest-drinks.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LatestDrinksComponent } from './pages/cocktail-landing/components/lates
     HeaderComponent,
     BannerLandingComponent,
     PopularDrinksComponent,
-    LatestDrinksComponent
+    LatestDrinksComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
