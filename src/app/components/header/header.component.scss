@@ -90,7 +90,7 @@ header{
         input.search-text{
           border: none;
           flex: 1;
-          height: 30px;
+          height: 25px;
           outline: none;
           font-size: 20px;
           color: var(--font-color);
@@ -174,11 +174,11 @@ header{
         width: 20%;
         //background: yellowgreen;
         a{
-          justify-content: center;
+          justify-content: flex-start;
           align-items: center;
           text-align: center;
           img{
-            width: 85%;
+            width: 70%;
           }
         }
       }
@@ -242,13 +242,14 @@ header{
         //background: pink;
 
         .search{
+          padding: 3px;
           input.search-text{
             width: 80%;
           }
         }
         .bxBookmark{
           img{
-            width: 50%;
+            width: 40%;
 
           }
         }
