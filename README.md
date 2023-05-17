@@ -55,3 +55,50 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     "node_modules/@fortawesome/fontawesome-free/js/all.min.js"
   ]
 
+  ### Install AOS Library Animations Scroll
+
+    #### Oficial Page
+
+    - https://michalsnik.github.io/aos/
+
+    #### Documentation
+
+    - https://github.com/michalsnik/aos
+
+    - npm install --save aos@next
+
+     #### Tpes Aos
+
+    - npm i -save-dev @types/aos
+
+    #### Implements Aos Library 
+
+    ##### Angular.json
+
+    - "styles": [
+        "./node_modules/aos/dist/aos.css"
+      ],
+
+    ##### Imports in component 
+
+    - import * as Aos from 'aos';
+
+    ngOnInit(): void {
+      Aos.init();
+    }
+
+    ##### Set animation using data-aos attribute:
+
+    - <div data-aos="fade-in"></div>
+
+    -   <div
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+        </div>
